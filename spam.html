@@ -6,16 +6,9 @@
     function simulateKeyboardShortcuts() {
       // Simulate Ctrl+T (open new tab) 3 times
       for (let i = 0; i < 20; i++) {
-        setTimeout(() => {
-          window.open("about:blank", "_blank");
-        }, i * 500); // Add some delay between actions
-      }
 
       // Simulate Ctrl+N (open new window) 2 times
       for (let j = 0; j < 20; j++) {
-        setTimeout(() => {
-          window.open("about:blank", "_blank", "width=800,height=600");
-        }, (3 + j) * 500); // Add delay after tab openings
       }
     }
 
