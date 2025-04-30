@@ -21,7 +21,25 @@ This tool is a great starting point for anyone curious about browser-based DoS (
 
 ## Usage Instructions
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/codingtizzy/Spam-Tab-Windows.git
-   cd Spam-Tab-Windows
+### Step 1: Clone the Repository
+To download the tool to your local machine, clone the repository using the following command:
+```bash
+git clone https://github.com/codingtizzy/Spam-Tab-Windows.git
+cd Spam-Tab-Windows
+
+### Step 2: Open the HTML File
+Once you've downloaded the repository:
+
+Navigate to the project folder.
+Open the index.html file in any modern web browser (e.g., Chrome, Firefox, Edge).
+
+### Step 3: Run the Tool
+After opening the index.html file in your browser, you will see a button on the page.
+Click the button to start the infinite tab and window spamming process.
+Be prepared! This action will open a large number of tabs and windows.
+
+### Step 4: Stop the Tool
+To stop the tool:
+
+Close the browser entirely (using Task Manager or Force Quit if necessary).
+Reboot your system if it becomes unresponsive.
