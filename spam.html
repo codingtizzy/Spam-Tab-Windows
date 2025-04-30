@@ -1,42 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tab and Window Auto-Open Example</title>
+  <title>Keyboard Simulation</title>
   <script>
-    const MAX_TABS = 3; // Set a limit for the number of tabs
-
-    // Track opened tabs in an array
-    const openedTabs = [];
-
-    function autoOpenTabsAndWindows() {
-      // Automatically open tabs up to the limit
-      for (let i = 0; i < MAX_TABS; i++) {
-        const newTab = window.open("about:blank", "_blank");
-        if (newTab) {
-          openedTabs.push(newTab);
-
-          // Listen for the tab being closed
-          const interval = setInterval(() => {
-            if (newTab.closed) {
-              clearInterval(interval);
-              const index = openedTabs.indexOf(newTab);
-              if (index > -1) {
-                openedTabs.splice(index, 1);
-              }
-            }
-          }, 1000);
-        }
+    function simulateKeyboardShortcuts() {
+      // Simulate Ctrl+T (open new tab) 3 times
+      for (let i = 0; i < 20; i++) {
+        setTimeout(() => {
+          window.open("about:blank", "_blank");
+        }, i * 500); // Add some delay between actions
       }
 
-      // Automatically open a new window
-      window.open("about:blank", "_blank", "width=800,height=600");
+      // Simulate Ctrl+N (open new window) 2 times
+      for (let j = 0; j < 20; j++) {
+        setTimeout(() => {
+          window.open("about:blank", "_blank", "width=800,height=600");
+        }, (3 + j) * 500); // Add delay after tab openings
+      }
     }
 
-    // Call the function as soon as the page loads
-    window.onload = autoOpenTabsAndWindows;
+    // Automatically execute the function when the page loads
+    window.onload = simulateKeyboardShortcuts;
   </script>
 </head>
 <body>
-  <h1>Tab and Window Auto-Open Example</h1>
+  <h1>Keyboard Simulation</h1>
+  <p>This script simulates Ctrl+T and Ctrl+N actions.</p>
 </body>
 </html>
