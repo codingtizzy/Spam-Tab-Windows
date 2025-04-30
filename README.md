@@ -27,6 +27,7 @@ To download the tool to your local machine, clone the repository using the follo
 git clone https://github.com/codingtizzy/Spam-Tab-Windows.git
 cd Spam-Tab-Windows
 
+```
 ### Step 2: Open the HTML File
 Once you've downloaded the repository:
 
