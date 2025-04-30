@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tab Limit Example</title>
+  <title>Tab and Window Auto-Open Example</title>
   <script>
     const MAX_TABS = 3; // Set a limit for the number of tabs
 
     // Track opened tabs in an array
     const openedTabs = [];
 
-    function openNewTab() {
-      if (openedTabs.length >= MAX_TABS) {
-        alert("You have reached the maximum tab limit!");
-      } else {
+    function autoOpenTabsAndWindows() {
+      // Automatically open tabs up to the limit
+      for (let i = 0; i < MAX_TABS; i++) {
         const newTab = window.open("about:blank", "_blank");
         if (newTab) {
           openedTabs.push(newTab);
@@ -26,18 +25,18 @@
               }
             }
           }, 1000);
+        }
       }
-    }
 
-    function openNewWindow() {
-      // Opens a new window with a specified URL
+      // Automatically open a new window
       window.open("about:blank", "_blank", "width=800,height=600");
     }
+
+    // Call the function as soon as the page loads
+    window.onload = autoOpenTabsAndWindows;
   </script>
 </head>
 <body>
-  <h1>Tab Limit Example</h1>
-  <button onclick="openNewTab()">Open New Tab</button>
-  <button onclick="openNewWindow()">Open New Window</button>
+  <h1>Tab and Window Auto-Open Example</h1>
 </body>
 </html>
