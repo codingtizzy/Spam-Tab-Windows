@@ -44,3 +44,7 @@ To stop the tool:
 
 Close the browser entirely (using Task Manager or Force Quit if necessary).
 Reboot your system if it becomes unresponsive.
+
+## Questions
+
+If you have any questions about this or any other one of my repositories, feel free to reach out to me on Discord! (@tizzyiwnl)
